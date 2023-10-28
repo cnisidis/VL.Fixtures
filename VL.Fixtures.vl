@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="FVNZxxgy1imN0LGkKMNg0D" LanguageVersion="2023.5.3-0164-g883a868a2e" Version="0.128">
-  <NugetDependency Id="MfBQvnYXUusOsR1BIx4qq8" Location="VL.CoreLib" Version="2023.5.3-0164-g883a868a2e" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="FVNZxxgy1imN0LGkKMNg0D" LanguageVersion="2023.5.3-0210-g711a1c31d4" Version="0.128">
+  <NugetDependency Id="MfBQvnYXUusOsR1BIx4qq8" Location="VL.CoreLib" Version="2023.5.3-0210-g711a1c31d4" />
   <Patch Id="CU06dzsldiYLqJVKZHMQIm">
     <Canvas Id="FDKyEOJFQzINahM0OReE7q" DefaultCategory="VL.Fixtures" CanvasType="FullCategory">
       <Canvas Id="QITZUzlHTgCOkKXsbxaAyi" Name="Utils" Position="332,115">
@@ -348,7 +348,7 @@
     ************************ IFixture ************************
 
 -->
-      <Node Name="IFixture" Bounds="245,225" Id="FEW9fKdmYJSO2qRbk8N9E2">
+      <Node Name="IFixture" Bounds="545,236" Id="FEW9fKdmYJSO2qRbk8N9E2">
         <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
           <Choice Kind="InterfaceDefinition" Name="Interface" />
         </p:NodeReference>
@@ -374,7 +374,7 @@
     ************************ FixtureDefinition ************************
 
 -->
-      <Node Name="FixtureDefinition" Bounds="569,293" Id="QAsrCWidzMaQPPUVl6kLPJ">
+      <Node Name="FixtureDefinition" Bounds="556,298" Id="QAsrCWidzMaQPPUVl6kLPJ">
         <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
           <Choice Kind="ClassDefinition" Name="Class" />
         </p:NodeReference>
@@ -384,10 +384,10 @@
             <ControlPoint Id="UdqB1GTcMcGOFALQKSHVZA" Bounds="643,189" />
             <ControlPoint Id="FSBHd06qgRTPG8r8im2mAO" Bounds="642,470" />
             <ControlPoint Id="HwPkvr4buWzOeX5o8iR6Q4" Bounds="767,467" />
-            <Pad Id="FLOa2uYe0dePn7Suy7yqFC" SlotId="OuYJXl7m127OHxotRXtVpk" Bounds="316,448" />
-            <ControlPoint Id="NH5TItAqVF1Oi0sHefS3ra" Bounds="370,348" />
-            <ControlPoint Id="OvSBKze0GJaOImfknRVcX0" Bounds="315,564" />
-            <ControlPoint Id="O8TkTSlY2qwLVMA0TrzxEE" Bounds="451,569" />
+            <Pad Id="FLOa2uYe0dePn7Suy7yqFC" SlotId="OuYJXl7m127OHxotRXtVpk" Bounds="257,370" />
+            <ControlPoint Id="NH5TItAqVF1Oi0sHefS3ra" Bounds="311,270" />
+            <ControlPoint Id="OvSBKze0GJaOImfknRVcX0" Bounds="256,486" />
+            <ControlPoint Id="O8TkTSlY2qwLVMA0TrzxEE" Bounds="392,491" />
             <Node Bounds="642,232,206,116" Id="DsUqVPGDGrXMo3KtcWW4RU">
               <p:NodeReference LastCategoryFullName="Collections.Mutable.MutableDictionary" LastDependency="VL.CoreLib.vl" OverloadStrategy="AllPinsThatAreNotCommon">
                 <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
@@ -495,13 +495,13 @@
           <Link Id="P1TM0JBjmDWPT9AAZeQA8p" Ids="J7HQAbAfDOwOLyLnlGhBMh,RoyeqtAe3zeNRB1ghVCyxi" />
         </Patch>
       </Node>
-      <Canvas Id="HIKR8aOgJtZO6NmLqtuJ4Z" Name="Attributes" Position="212,365">
+      <Canvas Id="HIKR8aOgJtZO6NmLqtuJ4Z" Name="Attributes" Position="529,179">
         <!--
 
     ************************ FloatAttribute ************************
 
 -->
-        <Node Name="FloatAttribute" Bounds="405,347" Id="IIn8CfcfsE9LDGHeR1yP8f" Tags="Float,Attribute,Fixtures,Value">
+        <Node Name="FloatAttribute" Bounds="335,319" Id="IIn8CfcfsE9LDGHeR1yP8f" Tags="Float,Attribute,Fixtures,Value">
           <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
             <Choice Kind="ClassDefinition" Name="Class" />
           </p:NodeReference>
@@ -647,11 +647,6 @@
                 <Pin Id="MsOQYHVuC6sMDealj79Qpp" Name="Result" Kind="OutputPin" />
               </Node>
             </Canvas>
-            <!--
-
-    ************************  ************************
-
--->
             <ProcessDefinition Id="SvfcFoLBLmEPnJxPqnPS5H" HasStateOut="true">
               <Fragment Id="RAYKJ3HRdXBQCMHkAbls1f" Patch="KSTpG4T8DH7LSiDiQgh4AL" Enabled="true" />
               <Fragment Id="OhupaUgelIzMRcztVbSFgu" Patch="Bg4CDS3hFuuMi7Tm50yZ44" />
@@ -936,7 +931,7 @@
     ************************ Pan ************************
 
 -->
-        <Node Name="Pan" Bounds="660,414" Id="PPRjfhDELIBOXoBjBI8adJ">
+        <Node Name="Pan" Bounds="627,367" Id="PPRjfhDELIBOXoBjBI8adJ">
           <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
             <Choice Kind="ContainerDefinition" Name="Process" />
           </p:NodeReference>
@@ -1011,11 +1006,6 @@
               <ControlPoint Id="FTQo63yecMeO9bq0z9oeLH" Bounds="916,329" />
               <ControlPoint Id="KD0PafpVE6nPcZY6HqIkbj" Bounds="785,328" />
             </Canvas>
-            <!--
-
-    ************************  ************************
-
--->
             <ProcessDefinition Id="JtoNyGBSV6gPgL9aF4MYvy">
               <Fragment Id="Usp77PlQebQO1xGfbEVNjB" Patch="VRO8MG5mGzzMp7LA4XhvjC" Enabled="true" />
               <Fragment Id="UPJa3tpEHTFO5BEgiGhETd" Patch="GaGV0GVCh45MZF6GYiOwfB" Enabled="true" />
