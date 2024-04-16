@@ -12,11 +12,12 @@ public static class Core
         return a + b;
     }
 
-    public static int FromByteArray(Spread<byte> bytes, bool isLittleEndian=true)
+    public static int FromByteArray(out int precision, Spread<byte> bytes, bool isLittleEndian=true)
     {
 
-
-        var count = bytes.Count * 8 -8;
+        precision = bytes.Count;
+        var count = precision * 8 -8;
+        
         var value = 0;
         if (isLittleEndian) 
             bytes =bytes.Reverse().ToSpread();
