@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="RLZUSdy07xfN8QP1yFZIwB" LanguageVersion="2025.7.0-0450-gf91772d401" Version="0.128">
+  <NugetDependency Id="K9yZIpCHb37QF6rHicbkmL" Location="VL.CoreLib" Version="2025.7.0-0450-gf91772d401" />
+  <Patch Id="GKjtRA1DEmTMAISS5CH17l">
+    <Canvas Id="HE0eZSQOPGKL7qvZ4Y1hNk" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="NDLoif7qCqXNoQJoOPYo9G">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <CategoryReference Kind="Category" Name="Primitive" />
+      </p:NodeReference>
+      <Patch Id="HWYM29bRj0hN0619RusjlI">
+        <Canvas Id="IY9DBdm7XFHMHdmpIbobxj" CanvasType="Group">
+          <Node Bounds="495,140,48,19" Id="KPkzKX8CAB2N5aV1Sefy7l">
+            <p:NodeReference LastCategoryFullName="VL.Fixtures" LastDependency="VL.Fixtures.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Fixture" />
+            </p:NodeReference>
+            <Pin Id="Ll2ho87q7MTMcjXacXUXT8" Name="Fixture" Kind="OutputPin" />
+            <Pin Id="OfSdEqKtezFNIpa1lHRsE3" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="CuRfsl9Rfv7QB6EMUd55id" Name="Parent" Kind="InputPin" />
+            <Pin Id="OdYG3XJ7zL7N8wnka3PJ4M" Name="Definition" Kind="InputPin" />
+          </Node>
+          <Node Bounds="111,119,84,26" Id="Nlb7jFmQOnhMAdPC3WmxcH">
+            <p:NodeReference LastCategoryFullName="VL.Fixtures.Fixture" LastDependency="VL.Fixtures.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="FromDefinition" />
+            </p:NodeReference>
+            <Pin Id="ROiiHyPnefRO8f5k4TBXrt" Name="Definition" Kind="InputPin" />
+            <Pin Id="DX3RLIspqUXNjcHxivpTTo" Name="Fixture" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="495,100,48,19" Id="H0c1M5jckABLdfpLGr3k7H">
+            <p:NodeReference LastCategoryFullName="VL.Fixtures" LastDependency="VL.Fixtures.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Fixture" />
+            </p:NodeReference>
+            <Pin Id="JBy6Qm2WdcaMlioS2p2Wfp" Name="Fixture" Kind="OutputPin" />
+            <Pin Id="SM8XhQYdgaeLnzgVNl9LyP" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="IJ58W1RqTSAPkFAVoKMFMh" Name="Parent" Kind="InputPin" />
+            <Pin Id="H4mtBqw7nY3MItaDSCvs4o" Name="Definition" Kind="InputPin" />
+          </Node>
+          <!--
+
+    ************************ MegaPointe ************************
+
+-->
+          <Node Name="MegaPointe" Bounds="793,141" Id="JfrgiZXoMbBNr3T5fDNuB0">
+            <p:NodeReference>
+              <Choice Kind="ContainerDefinition" />
+            </p:NodeReference>
+            <Patch Id="KWTKgASIyGsLVQlJQ71HZr">
+              <Canvas Id="GaOxbPlsargOC6oIxWt1vf" CanvasType="Group">
+                <Node Bounds="683,220,61,19" Id="POCiidULsYEQDBQQBaciq3">
+                  <p:NodeReference LastCategoryFullName="VL.Fixtures" LastDependency="VL.Fixtures.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="Category" Name="Fixtures" NeedsToBeDirectParent="true" />
+                    <Choice Kind="ProcessAppFlag" Name="Definition" />
+                  </p:NodeReference>
+                  <Pin Id="I8jA97HiWXiLbA3bwZcok3" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                  <Pin Id="VRpjar3xeaDO0zMVeo9Xla" Name="Name" Kind="InputPin" />
+                  <Pin Id="PMXluZSGYInP5BuNYjlvuk" Name="Modes" Kind="InputPin" />
+                  <Pin Id="BMecXTcgSHqNwDmpUmCtcD" Name="Definition" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="739,180,65,19" Id="HQ6JfFXVQbUPxp6LDH3YKR">
+                  <p:NodeReference LastCategoryFullName="VL.Fixtures" LastDependency="VL.Fixtures.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="Category" Name="Fixtures" NeedsToBeDirectParent="true" />
+                    <Choice Kind="ProcessAppFlag" Name="Mode" />
+                  </p:NodeReference>
+                  <Pin Id="RcFxjVdVMNuMF34fQ51Z5j" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                  <Pin Id="B1JPnkxCoccLc4lToMUi0Y" Name="Channels Count" Kind="InputPin" DefaultValue="40" />
+                  <Pin Id="GkgmRDSi23uMJ2xk0zu3hq" Name="Mode" Kind="OutputPin" />
+                  <Pin Id="UL6qYlSQ8aRPWkfRh9VXDJ" Name="Fields" Kind="InputPin" />
+                  <Pin Id="OlfCvsxzVRfQMhFRjIULES" Name="Fields 2" Kind="InputPin" />
+                  <Pin Id="IAoP6B2zqIJOsvzH0xz2HU" Name="Fields 3" Kind="InputPin" />
+                </Node>
+                <Node Bounds="759,40,65,19" Id="AbzD5n6Qp4SOfuU5xaJTeG">
+                  <p:NodeReference LastCategoryFullName="VL.Fixtures" LastDependency="VL.Fixtures.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="ProcessAppFlag" Name="Field" />
+                  </p:NodeReference>
+                  <Pin Id="AhBoGsSUBHLLdAJCPkybEM" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                  <Pin Id="FxhVBHnUkY3NR5nsb8DQcd" Name="Name" Kind="InputPin" DefaultValue="Pan" />
+                  <Pin Id="GlunSAC4PsBPyriM6OHw7P" Name="Type" Kind="InputPin" />
+                  <Pin Id="SzZ09vWTvFuPwswPn2f47p" Name="Offset" Kind="InputPin" />
+                  <Pin Id="Vcp4osMGyi6MMSXZXHjoFK" Name="Size" Kind="InputPin" DefaultValue="2" />
+                  <Pin Id="HH3tKZB7cb4LgV7XLsY64S" Name="Field" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="779,80,65,19" Id="OyTAzXskE8wN92auhmeNoH">
+                  <p:NodeReference LastCategoryFullName="VL.Fixtures" LastDependency="VL.Fixtures.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="ProcessAppFlag" Name="Field" />
+                  </p:NodeReference>
+                  <Pin Id="TtjxeAckBbaLW4DJ9qjUQI" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                  <Pin Id="BWKEs1dH5F2LYdJip9kofS" Name="Name" Kind="InputPin" DefaultValue="Tilt" />
+                  <Pin Id="SGZ3VKcX5s6QX8DcgoL1BA" Name="Type" Kind="InputPin" />
+                  <Pin Id="VE4drGu7TOKNiNrvhNOs6s" Name="Offset" Kind="InputPin" DefaultValue="2" />
+                  <Pin Id="Up1EmlHBDg6LuAMckAjC7h" Name="Size" Kind="InputPin" DefaultValue="2" />
+                  <Pin Id="Cy4Jo4uaQvQLMon7FGZGPx" Name="Field" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="799,120,65,19" Id="Pq7uhI35kcGOaCqd1VaWMR">
+                  <p:NodeReference LastCategoryFullName="VL.Fixtures" LastDependency="VL.Fixtures.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="ProcessAppFlag" Name="Field" />
+                  </p:NodeReference>
+                  <Pin Id="M5PfdenOhsWN9PpA4ahrbz" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                  <Pin Id="LyvzIHuyDJlO2lcFSWU5kt" Name="Name" Kind="InputPin" DefaultValue="Speed" />
+                  <Pin Id="TRV4GXaVdA2NNhF5k2n428" Name="Type" Kind="InputPin" />
+                  <Pin Id="O01dZCgsbTmMyJc0ShK77W" Name="Offset" Kind="InputPin" DefaultValue="2" />
+                  <Pin Id="Dlva045KA1wOnXJ3dDfDps" Name="Size" Kind="InputPin" DefaultValue="2" />
+                  <Pin Id="FkwKqvjfuXjLc7vvo9LtJ3" Name="Field" Kind="OutputPin" />
+                </Node>
+                <ControlPoint Id="ULZsSoQskjcL4CluncgxG0" Bounds="685,290" />
+                <Pad Id="Ve3KGBetuHALPZxvG8E0gl" Comment="Name" Bounds="685,150,35,15" ShowValueBox="true" isIOBox="true" Value="MegaPointe">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="TypeFlag" Name="String" />
+                  </p:TypeAnnotation>
+                </Pad>
+              </Canvas>
+              <Patch Id="H3uJBe0ykxlMUosBbMdNV9" Name="Create" />
+              <Patch Id="EGqCW4pztpmQYorvbYBXMR" Name="Update">
+                <Pin Id="LTtAK6XTrKXPt6Od9RPkcn" Name="Definition" Kind="OutputPin" />
+              </Patch>
+              <ProcessDefinition Id="FG3Jvs169IlN5tBCIaKO90">
+                <Fragment Id="CJiYSPRTUP5LpnBpp2jZWB" Patch="H3uJBe0ykxlMUosBbMdNV9" Enabled="true" />
+                <Fragment Id="JEmGTcOiDE5PXtE5avly0t" Patch="EGqCW4pztpmQYorvbYBXMR" Enabled="true" />
+              </ProcessDefinition>
+              <Link Id="GL9YFo53jv6PHNffb4q1zN" Ids="GkgmRDSi23uMJ2xk0zu3hq,PMXluZSGYInP5BuNYjlvuk" />
+              <Link Id="C6RuFJVvwjROIXoaoJ6Pd3" Ids="HH3tKZB7cb4LgV7XLsY64S,UL6qYlSQ8aRPWkfRh9VXDJ" />
+              <Link Id="G9srqa4hrzIOl1eOYConpk" Ids="Cy4Jo4uaQvQLMon7FGZGPx,OlfCvsxzVRfQMhFRjIULES" />
+              <Link Id="TwgiPfsG4xSOabY64teHL3" Ids="FkwKqvjfuXjLc7vvo9LtJ3,IAoP6B2zqIJOsvzH0xz2HU" />
+              <Link Id="SzR6GFKyUpSNmFYy4J8O6w" Ids="BMecXTcgSHqNwDmpUmCtcD,ULZsSoQskjcL4CluncgxG0" />
+              <Link Id="NGeFQXj7jsbPPHwxOzkgiv" Ids="ULZsSoQskjcL4CluncgxG0,LTtAK6XTrKXPt6Od9RPkcn" IsHidden="true" />
+              <Link Id="MEVfsriaG0iPZiJKycQ5at" Ids="Ve3KGBetuHALPZxvG8E0gl,VRpjar3xeaDO0zMVeo9Xla" />
+            </Patch>
+          </Node>
+          <Node Bounds="281,50,69,19" Id="QRZYbAF5UC1QYUV0Wpx1TQ">
+            <p:NodeReference LastCategoryFullName="Main" LastDependency="callmenames-2025-08-29_02.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="MegaPointe" />
+            </p:NodeReference>
+            <Pin Id="CzcPmV0JWv9MUcR18pIQVH" Name="Definition" Kind="OutputPin" />
+            <Pin Id="CuosA2mT9BNLzW98NGFfY3" Name="Node Context" Kind="InputPin" IsHidden="true" />
+          </Node>
+          <Pad Id="IBXpjNoVNfXMGNKpchsRdC" SlotId="PmQbjkpn5JXOl8SCR6O6Gf" Bounds="283,139" />
+          <Pad Id="D93NF1fCAiHOtY0HWzXXPf" SlotId="PmQbjkpn5JXOl8SCR6O6Gf" Bounds="540,40" />
+        </Canvas>
+        <Patch Id="P5EGihqKjpeQKP7ZOjHvI9" Name="Create" />
+        <Patch Id="Ks99iwctU8QQd0hxWGYkaE" Name="Update" />
+        <ProcessDefinition Id="G0KGXIVuOSRNO1P9IRy5Fd">
+          <Fragment Id="Lck0sFSGTXWLguKVCaMZgj" Patch="P5EGihqKjpeQKP7ZOjHvI9" Enabled="true" />
+          <Fragment Id="SgS9Up9CIlUM3A6LNgy3N4" Patch="Ks99iwctU8QQd0hxWGYkaE" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="KGszP79TQUQPE1CaQuwAjS" Ids="JBy6Qm2WdcaMlioS2p2Wfp,CuRfsl9Rfv7QB6EMUd55id" />
+        <Link Id="UqyXIUxSvU5OGYjNmDVC5w" Ids="CzcPmV0JWv9MUcR18pIQVH,ROiiHyPnefRO8f5k4TBXrt" />
+        <Slot Id="PmQbjkpn5JXOl8SCR6O6Gf" Name="Mega Pointe" />
+        <Link Id="SLNg8gmr9ulPOJYYndfHld" Ids="CzcPmV0JWv9MUcR18pIQVH,IBXpjNoVNfXMGNKpchsRdC" />
+        <Link Id="DMIcDLMLelYNxK8YNkyike" Ids="D93NF1fCAiHOtY0HWzXXPf,H4mtBqw7nY3MItaDSCvs4o" />
+        <Link Id="StYk9OBQX08LyHFkC5HKUu" Ids="D93NF1fCAiHOtY0HWzXXPf,OdYG3XJ7zL7N8wnka3PJ4M" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="D2jIBQqKlVKLXOAMXj2jmR" Location="VL.Fixtures" Version="0.0.0" />
+</Document>
