@@ -8,5 +8,8 @@ namespace VL.Fixtures
 {
     public interface IFixture
     {
+        public int GetSize();
+
+        public int GetID();
     }
 }

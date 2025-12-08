@@ -9,23 +9,13 @@ namespace VL.Fixtures.Fixture
         public Fixture? Parent;
         public int Mode;
         public int Size;
-
+        public int ID;
         public int[] Universes;
-        public Fixture(Fixture? Parent)
+        public Fixture(FixtureDefinition FDefinition, int Id = 0)
         {
-            if(Parent != null)
-            {
-                this.Parent = Parent;
-                if (this.Offset < this.Parent.Offset + Parent.Size)
-                {
-                    this.Offset += Parent.Offset + Parent.Size;
-                }
-            }
-
-            if(this.FixtureDefinition != null)
-            {
-                this.Size = FixtureDefinition.Modes.FirstOrDefault().ChannelsCount;
-            }
+            this.FixtureDefinition = FDefinition;
+            this.Size = FixtureDefinition.Modes.FirstOrDefault().ChannelsCount;
+            this.ID = Id;
         }
 
         public int GetSize() => FixtureDefinition.Modes[Mode].ChannelsCount == null ? 0 : FixtureDefinition.Modes[Mode].ChannelsCount;
@@ -58,5 +48,12 @@ namespace VL.Fixtures.Fixture
         { 
             this.FixtureDefinition = Definition;
         }
+
+        int IFixture.GetID()
+        {
+            return this.ID;
+        }
+
+        
     }
 }
